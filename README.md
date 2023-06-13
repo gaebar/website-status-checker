@@ -27,6 +27,6 @@ Contributing
 Contributions to the Website Status Monitor project are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
 License
-This project is licensed under the [MIT License](). See the [LICENSE]() file for more details.
+This project is licensed under the [MIT License](LICENCE). See the [LICENSE](LICENCE) file for more details.
 
 Feel free to modify and expand upon this README to provide more specific instructions or additional details about your project.

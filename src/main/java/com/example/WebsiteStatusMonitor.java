@@ -3,7 +3,7 @@ package com.example;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class WebsiteChecker {
+public class WebsiteStatusMonitor {
     public static void main(String[] args) {
         while (true) {
             try {

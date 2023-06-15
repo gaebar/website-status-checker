@@ -1,6 +1,6 @@
 # Website Status Monitor
 
-Website Status Monitor is a Java program that allows you to monitor the status of a website and receive notifications when it comes back online. This program is specifically designed to monitor the LeetCode website, but you can modify it to monitor any other website.
+Website Status Monitor is a Java program that allows you to monitor the status of a website and receive notifications when it comes back online. 
 
 ## How to Use
 
@@ -11,14 +11,9 @@ Website Status Monitor is a Java program that allows you to monitor the status o
 3.  Once the build is successful, you can run the program whit the following command:
 `java -cp target/website-checker-1.0-SNAPSHOT.jar com.example.WebsiteStatusMonitor`
 
+4. The program will prompt you to enter the website URL to monitor. You can enter the URL or press Enter to use the default URL, which is "https://leetcode.com/explore/interview/card/facebook/".
 
-4. The program will continuously check the LeetCode website's status. If the website is online (HTTP response code 200), it will display the message "LeetCode website is back online!" and terminate. If the website is offline, it will display the message "LeetCode website seems down... waiting for it to come back online" and continue monitoring.
-
-5. You can modify the program to monitor a different website by updating the URL in the `WebsiteStatusMonitor.java` file:
-
-`URL url = new URL("https://leetcode.com/explore/interview/card/facebook/");`
-
-Replace the URL with the desired website URL.
+5. The program will continuously check the website's status. If the website is online (HTTP response code 200), it will display the message "Website is back online!" and send an email notification. If the website is offline, it will display the message "Website seems down... waiting for it to come back online." and continue monitoring.
 
 Feel free to customize or extend the program according to your needs.
 Note: The program includes a delay of 60 seconds between each check. You can modify this duration by changing the value in the Thread.sleep() method.

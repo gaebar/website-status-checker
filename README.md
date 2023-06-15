@@ -19,12 +19,14 @@ Website Status Monitor is a Java program that allows you to monitor the status o
 
 5. Save the `.env` file.
 
-6. Run the program with the following command:
+6. Add .env to the .gitignore file to prevents the file from being committed to the Git repository. 
+
+7. Run the program with the following command:
 `java -cp target/website-checker-1.0-SNAPSHOT.jar com.example.WebsiteStatusMonitor`
 
-7. The program will prompt you to enter the website URL to monitor. You can enter the URL or press Enter to use the default URL, which is "https://leetcode.com/explore/interview/card/facebook/".
+8. The program will prompt you to enter the website URL to monitor. You can enter the website name (if it ends in ".com"), the full website URL, or press Enter to use the default URL, which is "https://leetcode.com".
 
-8. The program will continuously check the website's status. If the website is online (HTTP response code 200), it will display the message "Website is back online!" and send an email notification. If the website is offline, it will display the message "Website seems down... waiting for it to come back online." and continue monitoring.
+9. The program will continuously check the website's status. If the website is online (HTTP response code 200), it will display the message "Website is back online!" and send an email notification. If the website is offline, it will display the message "Website seems down... waiting for it to come back online." and continue monitoring.
 
 Feel free to customize or extend the program according to your needs.
 Note: The program includes a delay of 60 seconds between each check. You can modify this duration by changing the value in the Thread.sleep() method.

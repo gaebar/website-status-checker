@@ -11,9 +11,11 @@ Website Status Monitor is a Java program that allows you to monitor the status o
 3. Once the build is successful, create a `.env` file in the root directory of the project.
 
 4. Open the `.env` file and add the following environment variables with your AWS credentials:
-`   AWS_ACCESS_KEY_ID=XXX
+```plaintext
+    AWS_ACCESS_KEY_ID=XXX
     AWS_SECRET_ACCESS_KEY=XXX
-    AWS_REGION=XXX`
+    AWS_REGION=XXX
+```
 
 5. Save the `.env` file.
 

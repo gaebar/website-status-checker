@@ -10,15 +10,20 @@ import javax.mail.internet.*;
 
 public class WebsiteStatusMonitor {
     public void startMonitoring() {
-        // Prompt the user to enter the website URL to monitor (or use the default)
+        // Prompt the user to enter the website URL or name to monitor (or use the
+        // default)
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the website URL to monitor (or press Enter to use the default):");
-        String websiteURL = scanner.nextLine();
+        System.out.println("Enter the website URL or name to monitor (or press Enter to use the default):");
+        String input = scanner.nextLine();
         scanner.close();
 
-        // Set the default website URL if the user didn't provide any input
-        if (websiteURL.isEmpty()) {
-            websiteURL = "https://leetcode.com/explore/interview/card/facebook/";
+        String websiteURL;
+        if (input.isEmpty()) {
+            websiteURL = "https://leetcode.com/";
+        } else if (input.startsWith("http://") || input.startsWith("https://")) {
+            websiteURL = input;
+        } else {
+            websiteURL = "https://" + input + ".com";
         }
 
         while (true) {

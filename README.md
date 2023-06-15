@@ -1,6 +1,6 @@
 # Website Status Monitor
 
-Website Status Monitor is a Java program that allows you to monitor the status of a website and receive notifications when it comes back online. 
+Website Status Monitor is a Java program that allows you to monitor the status of a website and receive notifications when it comes back online.
 
 ## How to Use
 
@@ -8,12 +8,21 @@ Website Status Monitor is a Java program that allows you to monitor the status o
 
 2. Build the project using Maven by running the following command: `mvn clean install`.
 
-3.  Once the build is successful, you can run the program whit the following command:
+3. Once the build is successful, create a `.env` file in the root directory of the project.
+
+4. Open the `.env` file and add the following environment variables with your AWS credentials:
+`   AWS_ACCESS_KEY_ID=XXX
+    AWS_SECRET_ACCESS_KEY=XXX
+    AWS_REGION=XXX`
+
+5. Save the `.env` file.
+
+6. Run the program with the following command:
 `java -cp target/website-checker-1.0-SNAPSHOT.jar com.example.WebsiteStatusMonitor`
 
-4. The program will prompt you to enter the website URL to monitor. You can enter the URL or press Enter to use the default URL, which is "https://leetcode.com/explore/interview/card/facebook/".
+7. The program will prompt you to enter the website URL to monitor. You can enter the URL or press Enter to use the default URL, which is "https://leetcode.com/explore/interview/card/facebook/".
 
-5. The program will continuously check the website's status. If the website is online (HTTP response code 200), it will display the message "Website is back online!" and send an email notification. If the website is offline, it will display the message "Website seems down... waiting for it to come back online." and continue monitoring.
+8. The program will continuously check the website's status. If the website is online (HTTP response code 200), it will display the message "Website is back online!" and send an email notification. If the website is offline, it will display the message "Website seems down... waiting for it to come back online." and continue monitoring.
 
 Feel free to customize or extend the program according to your needs.
 Note: The program includes a delay of 60 seconds between each check. You can modify this duration by changing the value in the Thread.sleep() method.

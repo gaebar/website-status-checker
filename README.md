@@ -2,6 +2,11 @@
 
 Website Status Monitor is a Java program that allows you to monitor the status of a website and receive notifications when it comes back online.
 
+## Background
+
+During a period when the popular coding platform LeetCode underwent maintenance, I saw an opportunity to further hone my coding skills. The result was "Website Status Monitor" – a Java program designed to monitor website statuses, particularly LeetCode, and notify me when they're back online. It started as a personal project in between assignments and has evolved into a tool that might benefit others who want real-time updates on their favorite websites.
+
+
 ## How to Use
 
 1. Clone the repository to your local machine or open it in your preferred Java IDE.
